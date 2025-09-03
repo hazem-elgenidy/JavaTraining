@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask user for two integers
+        // ask user for two integers
         System.out.print("Enter the first integer (num1): ");
         int num1 = scanner.nextInt();
 
         System.out.print("Enter the second integer (num2): ");
         int num2 = scanner.nextInt();
 
-        // Arithmetic operations
+        // arithmetic operations
         System.out.println("Sum: " + (num1 + num2));
         System.out.println("Difference: " + (num1 - num2));
         System.out.println("Product: " + (num1 * num2));
@@ -30,7 +30,7 @@ public class Main {
             System.out.println("Both numbers are equal.");
         }
 
-        // Logical operators - positivity checks
+        // logical operators - positivity checks
         if (num1 > 0 && num2 > 0) {
             System.out.println("Both are positive.");
         } else if ((num1 > 0 && num2 <= 0) || (num1 <= 0 && num2 > 0)) {
@@ -39,7 +39,7 @@ public class Main {
             System.out.println("No positives.");
         }
 
-        // Ternary operators
+        // ternary operators
         String greaterNum = (num1 > num2) ? "num1 (" + num1 + ") is greater" :
                 (num2 > num1) ? "num2 (" + num2 + ") is greater" : "Both are equal";
         System.out.println("Using ternary operator - " + greaterNum);
